@@ -1,0 +1,42 @@
+# 🚫 FLUTTER & DART
+.dart_tool/
+.flutter-plugins*
+build/
+*.un~
+.packages
+
+# 💻 IDEs & EDITORES
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+
+# 🖥️ SISTEMA OPERATIVO
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# 📱 ANDROID
+android/.gradle/
+android/.idea/
+android/app/build/
+android/local.properties
+android/app/google-services.json
+android/app/keystore/
+
+# 🍎 iOS
+ios/.symlinks/
+ios/Flutter/ephemeral/
+ios/Flutter/.last_build_id
+
+# 🔐 SECRETOS & CONFIG LOCAL
+*.env
+.env.*
+!.env.example
+/keys/
+/credentials/
+
+# 📊 MISC
+coverage/
+doc/api/
