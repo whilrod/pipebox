@@ -2,8 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:audioplayers/audioplayers.dart';
 
+Future<void> setupAudioContext() async {
+  await AudioPlayer.global.setAudioContext(
+    AudioContext(
+      android: AudioContextAndroid(
+        usageType: AndroidUsageType.media,
+        audioFocus: AndroidAudioFocus.gain,
+      ),
+      iOS: AudioContextIOS(
+        category: AVAudioSessionCategory.playback,
+        options: {AVAudioSessionOptions.mixWithOthers},
+      ),
+    ),
+  );
+}
+
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await setupAudioContext();
   await SystemChrome.setEnabledSystemUIMode(
     SystemUiMode.immersiveSticky, // ← Se oculta, pero reaparece con swipe
     overlays: [], // ← Sin botones visibles
@@ -166,10 +183,19 @@ class _HomeScreenState extends State<HomeScreen> {
   // 🔇 Mute con volumen (como en tu mixer)
   void _toggleMute(int charIndex) {
     if (!_parkedSelectors.containsKey(charIndex)) return;
+    final player = _players[charIndex];
     final currentlyMuted = _isMuted[charIndex] ?? false;
     
-    // Mutea con volumen 0/1 en lugar de pause/play
-    _players[charIndex].setVolume(currentlyMuted ? 0.8 : 0);
+    if (currentlyMuted) {
+    // 🔊 DESMUTEAR: Reanuda el stream desde donde se pausó
+    player.resume();
+    player.setVolume(0.8); // Restaura volumen normal
+  } else {
+    // 🔇 MUTEAR: Detiene el stream a nivel de SO
+    // ✅ Las grabadoras de pantalla YA NO capturarán audio
+    player.pause();
+    player.setVolume(0); // 🔒 Capa extra de seguridad (opcional)
+  }
     
     setState(() => _isMuted[charIndex] = !currentlyMuted);
   }
@@ -351,7 +377,7 @@ Widget _infoItem(String title, String description) {
                 const SizedBox(height: 24), */
                 Row(
                   children:  [
-                  const Text('Ver. 0.1.4  ', style: TextStyle(fontSize: 14,fontFamily:"Super Squad Italic",color: Color.fromARGB(255, 38, 22, 80))),
+                  const Text('Ver. 0.1.6  ', style: TextStyle(fontSize: 14,fontFamily:"Super Squad Italic",color: Color.fromARGB(255, 38, 22, 80))),
 
                   IconButton(
                     icon: const Icon(Icons.info_outline, size: 20, color: Colors.blueAccent),onPressed: () => _showInfoDialog(context),
