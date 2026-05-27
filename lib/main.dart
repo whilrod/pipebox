@@ -78,12 +78,12 @@ class _HomeScreenState extends State<HomeScreen> {
   // 🎭 7 personajes
   final List<CharacterConfig> _characters = [
     CharacterConfig(id: 'p0', idleImg: 'assets/images/inicial_01.png', activeImg: 'assets/images/activo_01.png', playingImg: 'assets/images/reproduciendo_01.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
-    CharacterConfig(id: 'p1', idleImg: 'assets/images/inicial_02.png', activeImg: 'assets/images/activo_02.png', playingImg: 'assets/images/reproduciendo_02.gif', audio: 'sounds/reverse-scratch.mp3'),
-    CharacterConfig(id: 'p2', idleImg: 'assets/images/inicial_03.png', activeImg: 'assets/images/activo_03.png', playingImg: 'assets/images/reproduciendo_03.gif', audio: 'sounds/kick-sample.mp3'),
-    CharacterConfig(id: 'p3', idleImg: 'assets/images/inicial_04.png', activeImg: 'assets/images/activo_04.png', playingImg: 'assets/images/reproduciendo_04.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
-    CharacterConfig(id: 'p4', idleImg: 'assets/images/inicial_05.png', activeImg: 'assets/images/activo_05.png', playingImg: 'assets/images/reproduciendo_05.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
-    CharacterConfig(id: 'p5', idleImg: 'assets/images/inicial_06.png', activeImg: 'assets/images/activo_06.png', playingImg: 'assets/images/reproduciendo_06.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
-    CharacterConfig(id: 'p6', idleImg: 'assets/images/inicial_07.png', activeImg: 'assets/images/activo_07.png', playingImg: 'assets/images/reproduciendo_07.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
+    CharacterConfig(id: 'p1', idleImg: 'assets/images/inicial_01.png', activeImg: 'assets/images/activo_02.png', playingImg: 'assets/images/reproduciendo_02.gif', audio: 'sounds/reverse-scratch.mp3'),
+    CharacterConfig(id: 'p2', idleImg: 'assets/images/inicial_01.png', activeImg: 'assets/images/activo_03.png', playingImg: 'assets/images/reproduciendo_03.gif', audio: 'sounds/kick-sample.mp3'),
+    CharacterConfig(id: 'p3', idleImg: 'assets/images/inicial_01.png', activeImg: 'assets/images/activo_04.png', playingImg: 'assets/images/reproduciendo_04.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
+    CharacterConfig(id: 'p4', idleImg: 'assets/images/inicial_01.png', activeImg: 'assets/images/activo_05.png', playingImg: 'assets/images/reproduciendo_05.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
+    CharacterConfig(id: 'p5', idleImg: 'assets/images/inicial_01.png', activeImg: 'assets/images/activo_06.png', playingImg: 'assets/images/reproduciendo_06.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
+    CharacterConfig(id: 'p6', idleImg: 'assets/images/inicial_01.png', activeImg: 'assets/images/activo_07.png', playingImg: 'assets/images/reproduciendo_07.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
   ];
 
   // 🎛️ 14 selectores
@@ -377,7 +377,7 @@ Widget _infoItem(String title, String description) {
                 const SizedBox(height: 24), */
                 Row(
                   children:  [
-                  const Text('Ver. 0.1.6  ', style: TextStyle(fontSize: 14,fontFamily:"Super Squad Italic",color: Color.fromARGB(255, 38, 22, 80))),
+                  const Text('Ver. 0.1.7  ', style: TextStyle(fontSize: 14,fontFamily:"Super Squad Italic",color: Color.fromARGB(255, 38, 22, 80))),
 
                   IconButton(
                     icon: const Icon(Icons.info_outline, size: 20, color: Colors.blueAccent),onPressed: () => _showInfoDialog(context),
