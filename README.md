@@ -1,4 +1,4 @@
-# 🎧 Flutter Music Mixer
+# 🎧 Pipebox Music Mixer
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter)](https://flutter.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -9,9 +9,10 @@
 ---
 
 ## 🖼️ Preview
+<img width="1600" height="670" alt="como-jugar" src="https://github.com/user-attachments/assets/062d31f8-7888-4f50-8679-91221ffedd96" />
 
-> 💡 *Reemplaza esta sección con capturas o un GIF de tu app en acción*
-> ![Demo Screenshot](assets/demo/screenshot.png)
+> 💡 
+><img width="570" height="264" alt="pipebox" src="https://github.com/user-attachments/assets/df708983-843f-444a-9f69-0072d1061aa2" />
 
 ---
 
@@ -104,7 +105,7 @@ assets/                # Images & audio files
 👥 Credits
 💡 Concept: Pipe Rodríguez
 👨‍💻 Development: whilrod@gmail.com
-🎵 Audio Samples: [Add attribution if required]
+🎵 Audio Samples: Pixabay Creative Commons
 🎨 UI/UX: Custom Flutter implementation inspired by Incredibox
 📄 License
 This project is licensed under the MIT License – see the LICENSE file for details.
@@ -114,9 +115,9 @@ Fork the repository
 Create your feature branch (git checkout -b feature/amazing-feature)
 Commit your changes (git commit -m 'Add amazing feature')
 Push to the branch (git push origin feature/amazing-feature)
-Open a Pull Request
+Open a Pull Request<img width="570" height="264" alt="pipebox" src="https://github.com/user-attachments/assets/8968333c-4190-4262-920b-a944c93fc18d" />
+
 📬 Contact
 📧 whilrod@gmail.com
-🌐 Portfolio/Website (optional)
+🌐 pipebox.netlify.com
 🐛 Report issues or request features via GitHub Issues
-12345678910
