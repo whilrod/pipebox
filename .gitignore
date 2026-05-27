@@ -40,3 +40,18 @@ ios/Flutter/.last_build_id
 # 📊 MISC
 coverage/
 doc/api/
+
+# Kotlin/Android logs temporales
+android/.kotlin/
+android/app/src/debug/
+android/app/src/profile/
+
+# Configuración local de IDEs
+*.iml
+*.iws
+*.ipr
+.idea/
+*.local
+
+# Logs de error temporales
+**/*.log
