@@ -9,6 +9,7 @@
 ---
 
 ## 🖼️ Preview
+<img width="1600" height="670" alt="como-jugar" src="https://github.com/user-attachments/assets/062d31f8-7888-4f50-8679-91221ffedd96" />
 
 > 💡 
 ><img width="570" height="264" alt="pipebox" src="https://github.com/user-attachments/assets/df708983-843f-444a-9f69-0072d1061aa2" />
