@@ -370,11 +370,6 @@ Widget _infoItem(String title, String description) {
                   Wrap(alignment: WrapAlignment.spaceEvenly, spacing: 14, runSpacing: 14, children: List.generate(7, (i) => _buildSelector(i + 7))),
                 ],
               ),
-                /* const SizedBox(height: 10),
-                Wrap(alignment: WrapAlignment.spaceEvenly, spacing: 14, runSpacing: 14, children: List.generate(7, (i) => _buildSelector(i))),
-                SizedBox(height: 4),
-                Wrap(alignment: WrapAlignment.spaceEvenly, spacing: 14, runSpacing: 14, children: List.generate(7, (i) => _buildSelector(i + 7))),
-                const SizedBox(height: 24), */
                 Row(
                   children:  [
                   const Text('Ver. 0.1.7  ', style: TextStyle(fontSize: 14,fontFamily:"Super Squad Italic",color: Color.fromARGB(255, 38, 22, 80))),
@@ -387,19 +382,7 @@ Widget _infoItem(String title, String description) {
                 ],
                 
               ),
-              /* Row(
-  //mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-    const Text('👥 información', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-    const SizedBox(width: 8),
-    // 🆕 BOTÓN DE INFORMACIÓN
-    IconButton(
-      icon: const Icon(Icons.info_outline, size: 20, color: Colors.blueAccent),onPressed: () => _showInfoDialog(context),
-      tooltip: 'Cómo jugar',padding: EdgeInsets.zero,constraints: const BoxConstraints(),
-      ),
-  ],
-), */
-            ],
+             ],
           ),
         ),
       ),
