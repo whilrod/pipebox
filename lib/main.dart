@@ -64,13 +64,15 @@ class SelectorConfig {
   final String id;
   final String idleImg;      // Imagen neutra del selector
   final String activeImg;    // Imagen al pasar/hover
-  final String playingImg;   // Animación/GIF al reproducir
+  final String playingImg; // Animación/GIF al reproducir 
+  final String muteImg;  
   final String audio;        // Ruta del sonido
   SelectorConfig({
     required this.id,
     required this.idleImg,
     required this.activeImg,
     required this.playingImg,
+    required this.muteImg,
     required this.audio,
   });
 }
@@ -88,20 +90,20 @@ class _HomeScreenState extends State<HomeScreen> {
   // 📦 Configuración de los 14 selectores (cada uno trae su personaje + animación + audio)
   // ⚠️ AJUSTA LAS RUTAS DE IMAGENES SEGÚN TUS ARCHIVOS REALES
   final List<SelectorConfig> _selectors = [
-    SelectorConfig(id: 's0', idleImg: 'assets/images/selector_01.png', activeImg: 'assets/images/activo_01.png', playingImg: 'assets/images/reproduciendo_01.gif', audio: 'sounds/01.mp3'),
-    SelectorConfig(id: 's1', idleImg: 'assets/images/selector_02.png', activeImg: 'assets/images/activo_02.png', playingImg: 'assets/images/reproduciendo_02.gif', audio: 'sounds/02.mp3'),
-    SelectorConfig(id: 's2', idleImg: 'assets/images/selector_03.png', activeImg: 'assets/images/activo_03.png', playingImg: 'assets/images/reproduciendo_03.gif', audio: 'sounds/03.mp3'),
-    SelectorConfig(id: 's3', idleImg: 'assets/images/selector_04.png', activeImg: 'assets/images/activo_04.png', playingImg: 'assets/images/reproduciendo_04.gif', audio: 'sounds/04.mp3'),
-    SelectorConfig(id: 's4', idleImg: 'assets/images/selector_05.png', activeImg: 'assets/images/activo_05.png', playingImg: 'assets/images/reproduciendo_05.gif', audio: 'sounds/05.mp3'),
-    SelectorConfig(id: 's5', idleImg: 'assets/images/selector_06.png', activeImg: 'assets/images/activo_06.png', playingImg: 'assets/images/reproduciendo_06.gif', audio: 'sounds/06.mp3'),
-    SelectorConfig(id: 's6', idleImg: 'assets/images/selector_07.png', activeImg: 'assets/images/activo_07.png', playingImg: 'assets/images/reproduciendo_07.gif', audio: 'sounds/07.mp3'),
-    SelectorConfig(id: 's7', idleImg: 'assets/images/selector_07.png', activeImg: 'assets/images/activo_07.png', playingImg: 'assets/images/reproduciendo_07.gif', audio: 'sounds/08.mp3'),
-    SelectorConfig(id: 's8', idleImg: 'assets/images/selector_06.png', activeImg: 'assets/images/activo_06.png', playingImg: 'assets/images/reproduciendo_06.gif', audio: 'sounds/09.mp3'),
-    SelectorConfig(id: 's9', idleImg: 'assets/images/selector_05.png', activeImg: 'assets/images/activo_05.png', playingImg: 'assets/images/reproduciendo_05.gif', audio: 'sounds/10.mp3'),
-    SelectorConfig(id: 's10', idleImg: 'assets/images/selector_04.png', activeImg: 'assets/images/activo_04.png', playingImg: 'assets/images/reproduciendo_04.gif', audio: 'sounds/11.mp3'),
-    SelectorConfig(id: 's11', idleImg: 'assets/images/selector_03.png', activeImg: 'assets/images/activo_03.png', playingImg: 'assets/images/reproduciendo_03.gif', audio: 'sounds/12.mp3'),
-    SelectorConfig(id: 's12', idleImg: 'assets/images/selector_02.png', activeImg: 'assets/images/activo_02.png', playingImg: 'assets/images/reproduciendo_02.gif', audio: 'sounds/13.mp3'),
-    SelectorConfig(id: 's13', idleImg: 'assets/images/selector_01.png', activeImg: 'assets/images/activo_01.png', playingImg: 'assets/images/reproduciendo_01.gif', audio: 'sounds/14.mp3'),
+    SelectorConfig(id: 's0', idleImg: 'assets/images/selector_01.png', activeImg: 'assets/images/activo_01.png', playingImg: 'assets/images/reproduciendo_01.gif', muteImg: 'assets/images/mute_01.png',audio: 'sounds/01.mp3'),
+    SelectorConfig(id: 's1', idleImg: 'assets/images/selector_02.png', activeImg: 'assets/images/activo_02.png', playingImg: 'assets/images/reproduciendo_02.gif', muteImg: 'assets/images/mute_02.png',audio: 'sounds/02.mp3'),
+    SelectorConfig(id: 's2', idleImg: 'assets/images/selector_03.png', activeImg: 'assets/images/activo_03.png', playingImg: 'assets/images/reproduciendo_03.gif', muteImg: 'assets/images/mute_03.png',audio: 'sounds/03.mp3'),
+    SelectorConfig(id: 's3', idleImg: 'assets/images/selector_04.png', activeImg: 'assets/images/activo_04.png', playingImg: 'assets/images/reproduciendo_04.gif', muteImg: 'assets/images/mute_04.png',audio: 'sounds/04.mp3'),
+    SelectorConfig(id: 's4', idleImg: 'assets/images/selector_05.png', activeImg: 'assets/images/activo_05.png', playingImg: 'assets/images/reproduciendo_05.gif', muteImg: 'assets/images/mute_05.png',audio: 'sounds/05.mp3'),
+    SelectorConfig(id: 's5', idleImg: 'assets/images/selector_06.png', activeImg: 'assets/images/activo_06.png', playingImg: 'assets/images/reproduciendo_06.gif', muteImg: 'assets/images/mute_06.png',audio: 'sounds/06.mp3'),
+    SelectorConfig(id: 's6', idleImg: 'assets/images/selector_07.png', activeImg: 'assets/images/activo_07.png', playingImg: 'assets/images/reproduciendo_07.gif', muteImg: 'assets/images/mute_07.png',audio: 'sounds/07.mp3'),
+    SelectorConfig(id: 's7', idleImg: 'assets/images/selector_07.png', activeImg: 'assets/images/activo_07.png', playingImg: 'assets/images/reproduciendo_07.gif', muteImg: 'assets/images/mute_07.png',audio: 'sounds/08.mp3'),
+    SelectorConfig(id: 's8', idleImg: 'assets/images/selector_06.png', activeImg: 'assets/images/activo_06.png', playingImg: 'assets/images/reproduciendo_06.gif', muteImg: 'assets/images/mute_06.png',audio: 'sounds/09.mp3'),
+    SelectorConfig(id: 's9', idleImg: 'assets/images/selector_05.png', activeImg: 'assets/images/activo_05.png', playingImg: 'assets/images/reproduciendo_05.gif', muteImg: 'assets/images/mute_05.png',audio: 'sounds/10.mp3'),
+    SelectorConfig(id: 's10', idleImg: 'assets/images/selector_04.png', activeImg: 'assets/images/activo_04.png', playingImg: 'assets/images/reproduciendo_04.gif', muteImg: 'assets/images/mute_04.png',audio: 'sounds/11.mp3'),
+    SelectorConfig(id: 's11', idleImg: 'assets/images/selector_03.png', activeImg: 'assets/images/activo_03.png', playingImg: 'assets/images/reproduciendo_03.gif', muteImg: 'assets/images/mute_03.png',audio: 'sounds/12.mp3'),
+    SelectorConfig(id: 's12', idleImg: 'assets/images/selector_02.png', activeImg: 'assets/images/activo_02.png', playingImg: 'assets/images/reproduciendo_02.gif', muteImg: 'assets/images/mute_02.png',audio: 'sounds/13.mp3'),
+    SelectorConfig(id: 's13', idleImg: 'assets/images/selector_01.png', activeImg: 'assets/images/activo_01.png', playingImg: 'assets/images/reproduciendo_01.gif', muteImg: 'assets/images/mute_01.png',audio: 'sounds/14.mp3'),
   ];
 
   final List<CharState> _charStates = List.filled(7, CharState.idle);
@@ -279,7 +281,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Wrap(alignment: WrapAlignment.spaceEvenly, spacing: 14, runSpacing: 14, children: List.generate(7, (i) => _buildSelector(i + 7))),
               ]),
               Row(children:  [
-                const Text('Ver. 0.1.9  ', style: TextStyle(fontSize: 14,fontFamily:"Super Squad Italic",color: Color.fromARGB(255, 38, 22, 80))),
+                const Text('Ver. 0.1.10  ', style: TextStyle(fontSize: 14,fontFamily:"Super Squad Italic",color: Color.fromARGB(255, 38, 22, 80))),
                 IconButton(icon: const Icon(Icons.info_outline, size: 20, color: Colors.blueAccent),onPressed: () => _showInfoDialog(context),tooltip: 'Cómo jugar',padding: EdgeInsets.zero,constraints: const BoxConstraints(),),
                 const Text('', style: TextStyle(fontSize: 14,fontFamily:"Super Squad Italic",color: Color.fromARGB(255, 38, 22, 80))),
               ]),
@@ -312,35 +314,35 @@ class _HomeScreenState extends State<HomeScreen> {
       builder: (context, candidateData, rejectedData) {
         final bool isHovering = candidateData.isNotEmpty && !hasSelector && state != CharState.playing;
         
-        // 🎯 Determinar imagen actual (lógica explícita)
-        String currentImg = 'assets/images/inicial_01.png';
+        // 🎯 Lógica de imagen con prioridad: Mute > Playing > Hover > Idle
+        String currentImg = 'assets/images/no_character.png';
         double currentScale = 1.0;
         Color borderColor = Colors.black26;
-        double borderGlow = 0;
         
         if (hasSelector) {
-          // ✅ Slot ya ocupado: mostrar assets del selector asignado
           final selectorIndex = _slotSelectors[index]!;
           final config = _selectors[selectorIndex];
-          
-          if (state == CharState.playing) {
+
+          if (isMuted) {
+            currentImg = config.muteImg;    // ← 🎯 Estado MUTE (prioridad máxima)
+            currentScale = 1.0;
+            borderColor = Colors.grey.withValues(alpha: 0.5);
+          } else if (state == CharState.playing) {
             currentImg = config.playingImg;
             currentScale = 1.05;
+            borderColor = Colors.black26;
           } else {
             currentImg = config.idleImg;
             currentScale = 1.0;
           }
         } else if (isHovering) {
-          // ✅ HOVER ACTIVO: Mostrar activo_xx.png + efecto visual
           final selectorId = candidateData.first;
           final selectorIndex = _selectors.indexWhere((s) => s.id == selectorId);
-          
           if (selectorIndex >= 0) {
             final config = _selectors[selectorIndex];
-            currentImg = config.activeImg; // ← 🎯 CAMBIO CLAVE: activo_xx.png
-            currentScale = 1.15;           // ← 🎯 Escala para destacar
+            currentImg = config.activeImg;
+            currentScale = 1.15;
             borderColor = Colors.blueAccent;
-            borderGlow = 4;                // ← 🎯 Glow azul
           }
         }
 
