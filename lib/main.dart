@@ -279,7 +279,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Wrap(alignment: WrapAlignment.spaceEvenly, spacing: 14, runSpacing: 14, children: List.generate(7, (i) => _buildSelector(i + 7))),
               ]),
               Row(children:  [
-                const Text('Ver. 0.1.8  ', style: TextStyle(fontSize: 14,fontFamily:"Super Squad Italic",color: Color.fromARGB(255, 38, 22, 80))),
+                const Text('Ver. 0.1.9  ', style: TextStyle(fontSize: 14,fontFamily:"Super Squad Italic",color: Color.fromARGB(255, 38, 22, 80))),
                 IconButton(icon: const Icon(Icons.info_outline, size: 20, color: Colors.blueAccent),onPressed: () => _showInfoDialog(context),tooltip: 'Cómo jugar',padding: EdgeInsets.zero,constraints: const BoxConstraints(),),
                 const Text('', style: TextStyle(fontSize: 14,fontFamily:"Super Squad Italic",color: Color.fromARGB(255, 38, 22, 80))),
               ]),
