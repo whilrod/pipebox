@@ -88,20 +88,20 @@ class _HomeScreenState extends State<HomeScreen> {
   // 📦 Configuración de los 14 selectores (cada uno trae su personaje + animación + audio)
   // ⚠️ AJUSTA LAS RUTAS DE IMAGENES SEGÚN TUS ARCHIVOS REALES
   final List<SelectorConfig> _selectors = [
-    SelectorConfig(id: 's0', idleImg: 'assets/images/selector_01.png', activeImg: 'assets/images/activo_01.png', playingImg: 'assets/images/reproduciendo_01.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
-    SelectorConfig(id: 's1', idleImg: 'assets/images/selector_02.png', activeImg: 'assets/images/activo_02.png', playingImg: 'assets/images/reproduciendo_02.gif', audio: 'sounds/reverse-scratch.mp3'),
-    SelectorConfig(id: 's2', idleImg: 'assets/images/selector_03.png', activeImg: 'assets/images/activo_03.png', playingImg: 'assets/images/reproduciendo_03.gif', audio: 'sounds/kick-sample.mp3'),
-    SelectorConfig(id: 's3', idleImg: 'assets/images/selector_04.png', activeImg: 'assets/images/activo_04.png', playingImg: 'assets/images/reproduciendo_04.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
-    SelectorConfig(id: 's4', idleImg: 'assets/images/selector_05.png', activeImg: 'assets/images/activo_05.png', playingImg: 'assets/images/reproduciendo_05.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
-    SelectorConfig(id: 's5', idleImg: 'assets/images/selector_06.png', activeImg: 'assets/images/activo_06.png', playingImg: 'assets/images/reproduciendo_06.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
-    SelectorConfig(id: 's6', idleImg: 'assets/images/selector_07.png', activeImg: 'assets/images/activo_07.png', playingImg: 'assets/images/reproduciendo_07.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
-    SelectorConfig(id: 's7', idleImg: 'assets/images/selector_07.png', activeImg: 'assets/images/activo_07.png', playingImg: 'assets/images/reproduciendo_07.gif', audio: 'sounds/matimassa-drum-loop-trap.mp3'),
-    SelectorConfig(id: 's8', idleImg: 'assets/images/selector_06.png', activeImg: 'assets/images/activo_06.png', playingImg: 'assets/images/reproduciendo_06.gif', audio: 'sounds/06.mp3'),
-    SelectorConfig(id: 's9', idleImg: 'assets/images/selector_05.png', activeImg: 'assets/images/activo_05.png', playingImg: 'assets/images/reproduciendo_05.gif', audio: 'sounds/07.mp3'),
-    SelectorConfig(id: 's10', idleImg: 'assets/images/selector_04.png', activeImg: 'assets/images/activo_04.png', playingImg: 'assets/images/reproduciendo_04.gif', audio: 'sounds/08.mp3'),
-    SelectorConfig(id: 's11', idleImg: 'assets/images/selector_03.png', activeImg: 'assets/images/activo_03.png', playingImg: 'assets/images/reproduciendo_03.gif', audio: 'sounds/09.mp3'),
-    SelectorConfig(id: 's12', idleImg: 'assets/images/selector_02.png', activeImg: 'assets/images/activo_02.png', playingImg: 'assets/images/reproduciendo_02.gif', audio: 'sounds/11.mp3'),
-    SelectorConfig(id: 's13', idleImg: 'assets/images/selector_01.png', activeImg: 'assets/images/activo_01.png', playingImg: 'assets/images/reproduciendo_01.gif', audio: 'sounds/12.mp3'),
+    SelectorConfig(id: 's0', idleImg: 'assets/images/selector_01.png', activeImg: 'assets/images/activo_01.png', playingImg: 'assets/images/reproduciendo_01.gif', audio: 'sounds/01.mp3'),
+    SelectorConfig(id: 's1', idleImg: 'assets/images/selector_02.png', activeImg: 'assets/images/activo_02.png', playingImg: 'assets/images/reproduciendo_02.gif', audio: 'sounds/02.mp3'),
+    SelectorConfig(id: 's2', idleImg: 'assets/images/selector_03.png', activeImg: 'assets/images/activo_03.png', playingImg: 'assets/images/reproduciendo_03.gif', audio: 'sounds/03.mp3'),
+    SelectorConfig(id: 's3', idleImg: 'assets/images/selector_04.png', activeImg: 'assets/images/activo_04.png', playingImg: 'assets/images/reproduciendo_04.gif', audio: 'sounds/04.mp3'),
+    SelectorConfig(id: 's4', idleImg: 'assets/images/selector_05.png', activeImg: 'assets/images/activo_05.png', playingImg: 'assets/images/reproduciendo_05.gif', audio: 'sounds/05.mp3'),
+    SelectorConfig(id: 's5', idleImg: 'assets/images/selector_06.png', activeImg: 'assets/images/activo_06.png', playingImg: 'assets/images/reproduciendo_06.gif', audio: 'sounds/06.mp3'),
+    SelectorConfig(id: 's6', idleImg: 'assets/images/selector_07.png', activeImg: 'assets/images/activo_07.png', playingImg: 'assets/images/reproduciendo_07.gif', audio: 'sounds/07.mp3'),
+    SelectorConfig(id: 's7', idleImg: 'assets/images/selector_07.png', activeImg: 'assets/images/activo_07.png', playingImg: 'assets/images/reproduciendo_07.gif', audio: 'sounds/08.mp3'),
+    SelectorConfig(id: 's8', idleImg: 'assets/images/selector_06.png', activeImg: 'assets/images/activo_06.png', playingImg: 'assets/images/reproduciendo_06.gif', audio: 'sounds/09.mp3'),
+    SelectorConfig(id: 's9', idleImg: 'assets/images/selector_05.png', activeImg: 'assets/images/activo_05.png', playingImg: 'assets/images/reproduciendo_05.gif', audio: 'sounds/10.mp3'),
+    SelectorConfig(id: 's10', idleImg: 'assets/images/selector_04.png', activeImg: 'assets/images/activo_04.png', playingImg: 'assets/images/reproduciendo_04.gif', audio: 'sounds/11.mp3'),
+    SelectorConfig(id: 's11', idleImg: 'assets/images/selector_03.png', activeImg: 'assets/images/activo_03.png', playingImg: 'assets/images/reproduciendo_03.gif', audio: 'sounds/12.mp3'),
+    SelectorConfig(id: 's12', idleImg: 'assets/images/selector_02.png', activeImg: 'assets/images/activo_02.png', playingImg: 'assets/images/reproduciendo_02.gif', audio: 'sounds/13.mp3'),
+    SelectorConfig(id: 's13', idleImg: 'assets/images/selector_01.png', activeImg: 'assets/images/activo_01.png', playingImg: 'assets/images/reproduciendo_01.gif', audio: 'sounds/14.mp3'),
   ];
 
   final List<CharState> _charStates = List.filled(7, CharState.idle);
