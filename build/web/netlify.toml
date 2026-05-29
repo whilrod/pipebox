@@ -1,0 +1,20 @@
+# netlify.toml
+[build]
+  publish = "build/web"
+  command = "flutter build web --release --wasm"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Cache optimizado para assets de Flutter
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/flutter_*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
